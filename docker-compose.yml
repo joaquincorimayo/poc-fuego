@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ### mongo database for reports
+  db-reports:
+    container_name: db-reports
+    image: mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - "27017:27017"

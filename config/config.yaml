@@ -1,0 +1,10 @@
+# Database settings
+database:
+  url: "mongodb://root:root@localhost:27017/reports?retryWrites=true&w=majority&authSource=admin"
+  db: "reports"
+  timeout: 5
+
+# Server settings
+server:
+  host: "localhost"
+  port: 8080
